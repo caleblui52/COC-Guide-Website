@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caleb Lui">
+    <title>COCTRPG Sanity page</title>
+    <link rel="stylesheet" href="../css/Sanity.css">
+    <link rel="stylesheet" href="../css/Option.css">
+
+  </head>
+
+  <body>
+    <div id="site-nav"></div>
+  
+    <img id="background" src="../resource/Background3.jpg">
+    <div id="bglayer"></div>
+    
+    
+    <div id="main-container">
+    
+      <h1>Sanity System</h1>
+    
+    
+      <div class="section">
+        <h2>What is Sanity</h2>
+        <p><strong>Sanity system</strong> is the most <strong>significant</strong> element of <strong>COC</strong>. It defines the <strong>mental state</strong> of the investigator through the whole game.
+          The started value of <strong>Sanity points</strong> (SAN) is equal to the point of <strong>POW</strong>, and the points should be tracked carefully as the number 
+          <strong>can change</strong> up and down throughout the game. 
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>SAN Check</h2>
+        <p> When investigators encounter a <strong>sanity-threatening situation</strong>, the Keeper may call for a <strong>Sanity roll</strong>. Each player whose investigator 
+          experiences this source of horror rolls 1D100. A success is a roll equal to or less than the investigator’s current Sanity points. 
+          <strong>Bonus dice</strong> and <strong>penalty dice</strong> are <strong>not</strong> applied to Sanity rolls 
+          <br><br>
+          A <strong>successful roll</strong> means that the investigator loses <strong>no</strong> Sanity points, or only a <strong>minimal amount</strong>. A <strong>failed Sanity </strong>roll always means 
+          the investigator loses Sanity points. The amount lost depends on the spell, book, entity, or <strong>situation encountered</strong>.<br>
+          Here some example for the SAN loses (successful roll/fail roll):</p>
+          <div class="Row">
+            <ul style="list-style-type:'✵';">
+              <li><strong>0/1D2</strong> Found torn <strong>animal carcasses</strong></li>
+              <li><strong>0/1D3</strong> Found <strong>part of a body</strong></li>
+              <li><strong>0/1D4</strong> saw <strong>blood flowing</strong> all over the ground</li>
+              <li><strong>1/1D4+1</strong> Found a bloody and horrible <strong>corpse</strong></li>
+              <li><strong>0/1D6</strong> Wake up and find yourself <strong>trapped in a coffin</strong></li>
+              <li><strong>0/1D6</strong> Witness the <strong>death</strong> of a friend by <strong>violence act</strong> </li>
+              <li><strong>0/1D6</strong> See a <strong>ghoul</strong></li>
+              <li><strong>1/1D6+1</strong> Encounter with a <strong>person you know</strong> to be <strong>dead</strong></li>
+              <li><strong>0/1D10</strong> tortured</li>
+              <li><strong>1/1D10</strong> Seeing a <strong>dead</strong> body <strong>resurrected</strong></li>
+              <li><strong>2/2D10+1</strong> Witness <strong>corpses raining down</strong> from the sky</li>
+              <li><strong>1D10/1D100</strong> Look directly at <strong>the great Cthulhu</strong></li>
+            </ul>
+
+            <img id="scare" src="../resource/scare.gif">
+        
+          </div>
+      </div>
+
+      <div class="section">
+        <h2>Insanity</h2>
+        
+        <div class="Row">
+        <div>
+        <p>Because of the lose of SAN, <strong>insanity</strong> may happen on player:</p>
+        <ul style="list-style-type:'✵';">
+          <li><strong>Temporary</strong> Insanity: losing <strong>≥5</strong> SAN at <strong>once</strong></li>
+          <li><strong>Indefinite</strong> Insanity: losing <strong>≥⅕</strong> SAN in <strong>one game day</strong></li>
+          <li><strong>Permanent</strong> Insanity: SAN equal to <strong>0</strong></li>
+        </ul>
+        </div>
+        <div class="scene scene--card">
+          <div class="card">
+            <div class="card__face card__face--front"></div>
+            <div class="card__face card__face--back"></div>
+          </div>
+        </div>
+        </div>
+        <p>These insanities may bring various <strong>Bouts of Madness</strong> on PC, Permanent Insanity even turn your investigator to <strong>lose player control</strong>!</p>
+        
+    
+      </div>
+
+
+      <div class="section">
+        <h2>Next...</h2>
+        <div id="Link">
+        <a href="Combat.html" style="position: relative;" >
+            <h3>Know More Rules</h3>
+        </a>
+        </div>
+      </div>
+
+    </div>
+
+   
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const observer = new IntersectionObserver((entries) => {
+              entries.forEach(entry => {
+                  entry.target.classList.toggle('active', entry.isIntersecting);
+              });
+          }, {
+              threshold: 0.15,
+              rootMargin: '0px 0px -50px 0px'
+          });
+  
+          document.querySelectorAll('.section, .scene').forEach(el => {
+              observer.observe(el);
+              el.style.visibility = 'visible';
+          });
+      });
+    </script>
+
+    <script src="../js/common.js"></script>
+  </body>
+
+
+
+
+
+</html>
+

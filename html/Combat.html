@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html>
+    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caleb Lui">
+    <title>COCTRPG Combat page</title>
+    <link rel="stylesheet" href="../css/Combat.css">
+    <link rel="stylesheet" href="../css/Option.css">
+
+  </head>
+
+  <body>
+    <div id="site-nav"></div>
+  
+    <img id="background" src="../resource/Background5.jpg">
+    <div id="bglayer"></div>
+    
+    
+    <div id="main-container">
+    
+      <h1>Combat</h1>
+    
+    
+      <div class="section">
+        <h2>About Combat</h2>
+        <p> Although it has been highly advised <strong>NOT</strong> to <strong>fight</strong> with the dangerous creatures. If violence continues, then we will eventually have to
+            negotiated with fists and bullets.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Related Attributes</h2>
+        <p> There are various <strong>attributes</strong> of investigator that may <strong>affect the combat</strong>:</p>
+          <div class="Row">
+            <ul style="list-style-type:'✵';">
+              <li><strong>DEX</strong>: decide your <strong>action order</strong> in the battle.</li>
+              <li><strong>DB</strong>: base on <strong>STR</strong> and <strong>SIZ</strong>, it means the <strong>extra damage</strong> you can make in melee combat</li>
+              <li><strong>Build</strong>: base on <strong>STR</strong> and <strong>SIZ</strong>, affect the <strong>success ratio</strong> of using <strong>maneuvers</strong></li>
+              <li><strong>Combat Skills</strong>: the <strong>skill points</strong> of skills like <strong>Brawl</strong>, <strong>Firearms</strong>, <strong>Melee Weapeons</strong></li>
+              <li><strong>Dodge</strong>: the skill points of dodge decide the <strong>success ratio</strong> for <strong>dodging</strong> enermy's attack.</li>
+            </ul>
+
+            <img src="../resource/BattleGraph.png">
+        
+          </div>
+      </div>
+
+
+      <div class="section">
+        <h2>Combat Rules</h2>
+        <p>The logic of Combat round is <strong>similar</strong> to <strong>Opposed Rolls</strong>. It basically just a set of <strong>Opposed Rolls</strong> which take turns by <strong>DEX</strong>and the 
+            type of skills that can be used is limited. Everyone will <strong>attack once</strong>(mostly) in a round and the <strong>target</strong> use a skill to <strong>counter</strong> 
+            or <strong>dodge</strong>. The Combat will <strong>continues until</strong> one side <strong>leave</strong> or <strong>die</strong>.<br><br>
+            The most important <strong>difference</strong> of Opposed Rolls in <strong>Combat</strong> and the <strong>normal situation </strong>is the process of <strong>tie</strong>. 
+            In Combat Round, the win and lose when the success level 
+            is tie follow the rules:<br><br>
+            <strong>Dodge</strong> ＞ <strong>Attack</strong> (Brawl, Firearms, Magic...) ＞ <strong>Counter</strong> (Brawl, Firearms, Magic...)<br><br>
+            More details can be find in the Offical Rulebook.</p>
+      </div>
+
+      
+      <div class="section character-section">
+        <h2>Sample PC</h2>
+        <p>Here are the PC that for the example combat:</p>
+
+        <div id="pc-container">
+            <div class="character active" style="background-image: url('../resource/Cat.png')"></div>
+            <div class="character rightside" style="background-image: url('../resource/kiana.png')"></div>
+            <div class="character leftside" style="background-image: url('../resource/Lee.png')"></div>
+
+        </div>
+
+        <div class="info-box active" data-index="0">
+            <table>
+                <tr><th>Name</th><td>Michelle·Lee</td></tr>
+                <tr><th>HP</th><td>10</td></tr>
+                <tr><th>DEX</th><td>70</td></tr>
+                <tr><th>Build</th><td>0</td></tr>
+                <tr><th>Firearm</th><td>90 [2d6+1]</td></tr>
+                <tr><th>Dodge</th><td>50</td></tr>
+            </table>
+        </div>
+
+        <div class="info-box" data-index="1">
+            <table>
+                <tr><th>Name</th><td>Kiana·Kaslana</td></tr>
+                <tr><th>HP</th><td>12</td></tr>
+                <tr><th>DEX</th><td>65</td></tr>
+                <tr><th>Build</th><td>0</td></tr>
+                <tr><th>Brawl</th><td>80 [1d8+dB]</td></tr>
+                <tr><th>Dodge</th><td>70</td></tr>
+            </table>
+        </div>
+
+        <div class="info-box" data-index="2">
+            <table>
+                <tr><th>Name</th><td>Li Shuwen</td></tr>
+                <tr><th>HP</th><td>13</td></tr>
+                <tr><th>DEX</th><td>85</td></tr>
+                <tr><th>Build</th><td>+1</td></tr>
+                <tr><th>Brwal</th><td>90 [1d4+dB]</td></tr>
+                <tr><th>Dodge</th><td>70</td></tr>
+            </table>
+        </div>
+
+
+      </div>
+
+
+      <div class="section" id="slideshow">
+        <h2>Combat Example</h2>
+        
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+        <input type="radio" name="slide" id="slide5">
+        <input type="radio" name="slide" id="slide6">
+        <input type="radio" name="slide" id="slide7">
+        <input type="radio" name="slide" id="slide8">
+
+        <div class="slideshow-container">
+            
+            <div class="slides">
+                <div class="slide">
+                    <div class="content sleep">
+                        <p>In this combat, PCs meet a <strong>werid sheep</strong></p>
+                        <img src="../resource/sheep.png">
+                        <div><p>DEX: <strong>40</strong></p><p>Magic(FireBall) [<strong>3D6</strong>]: <strong>60</strong></p></div>
+                    </div>
+                    <label class="prev" for="slide8">❮</label>
+                    <label class="next" for="slide2">❯</label>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <p>The action <strong>order</strong> due to <strong>DEX</strong> should be:</p>
+    
+                        <div class="flex-box order1">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>1</h4><img src="../resource/LeeQ1.png"><p>DEX: <strong>85</strong></p></div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>2</h4><img src="../resource/CatQ1.png"><p>DEX: <strong>70</strong></p></div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>3</h4><img src="../resource/kianaQ1.png"><p>DEX: <strong>65</strong></p></div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>4</h4><img src="../resource/sheep.png"><p>DEX: <strong>40</strong></p></div>
+                        </div>
+                     
+                    </div>
+                    <label class="prev" for="slide1">❮</label>
+                    <label class="next" for="slide3">❯</label>
+                </div>
+
+
+                <div class="slide">
+                    <div class="content">
+                        <p>As Michelle gonna use <strong>firearm</strong> and the sheep gonna use <strong>magic</strong>, their <strong>DEX +50</strong>:</p>
+    
+                        <div class="flex-box order1">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>1</h4><img src="../resource/CatQ1.png"><p>DEX: <strong>70+50</strong></p></div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>2</h4><img src="../resource/sheep.png"><p>DEX: <strong>40+50</strong></p></div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>3</h4><img src="../resource/LeeQ1.png"><p>DEX: <strong>85</strong></p></div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>4</h4><img src="../resource/kianaQ1.png"><p>DEX: <strong>65</strong></p></div>
+                            
+                        </div>
+                    </div>
+                    <label class="prev" for="slide2">❮</label>
+                    <label class="next" for="slide4">❯</label>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <p>Michelle <strong>Regular Successs</strong><h5>VS</h5><strong>Fail</strong>Sheep </p>
+                        <h3>Sheep -HP 3+4+1=<strong>8</strong></h3>
+    
+                        <div class="flex-box order1">
+                            <div style="display: flex;flex-direction: column;justify-content: center;">
+                                <h4>Attack(Firearm)</h4>
+                                <div class="Cat"><span class="tooltiptext">You shall die!</span></div>
+                                <p>Roll: <strong>76</strong>/90</p>
+                            </div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>Counter(FireBall)</h4><img src="../resource/sheep.png"><p>Roll: <strong>92</strong> /60</p></div>
+                        </div>
+                    </div>
+                    <label class="prev" for="slide3">❮</label>
+                    <label class="next" for="slide5">❯</label>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <p>Li <strong>Fail</strong><h5>VS</h5>Sheep <strong>Fail</strong></p>
+                        <h3><strong>Nothing</strong> Happen</h3>
+    
+                        <div class="flex-box order1">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>Dodge</h4><img src="../resource/LeeQ1.png"><p>Roll: <strong>80</strong>/70</p></div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>Attack(FireBall)</h4><img src="../resource/sheep.png"><p>Roll: <strong>61</strong>/60</p></div>
+                        </div>
+                    </div>
+                    <label class="prev" for="slide4">❮</label>
+                    <label class="next" for="slide6">❯</label>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <p>Li <strong>Regular</strong> Successs<h5>VS</h5>Sheep <strong>Hard</strong> Success</p>
+                        <h3>Li -HP 1+1+2=<strong>4</strong></h3>
+    
+                        <div class="flex-box order1">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>Attack(Brawl Maneuvers)</h4><img src="../resource/LeeQ1.png"><p>Roll: <strong>62</strong>/90</p></div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>Counter(FireBall)</h4><img src="../resource/sheep.png"><p>Roll: <strong>22</strong>/60</p></div>
+                        </div>
+                    </div>
+                    <label class="prev" for="slide5">❮</label>
+                    <label class="next" for="slide7">❯</label>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <p>Kiana <strong>Critical</strong> Success<h5>VS</h5>Sheep <strong>Hard</strong> Success</p>
+                        <h3>Sheep -HP 7+4=<strong>11</strong></h3>
+    
+                        <div class="flex-box order1">
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>Attack(Brawl BaseballBat)</h4><img src="../resource/kianaQ1.png"><p>Roll: <strong>1</strong>/80</p></div>
+                            <div style="display: flex;flex-direction: column;justify-content: center;"><h4>Counter(FireBall)</h4><img src="../resource/sheep.png"><p>Roll: <strong>14</strong>/60</p></div> 
+                        </div>
+                    </div>
+                    <label class="prev" for="slide6">❮</label>
+                    <label class="next" for="slide8">❯</label>
+                </div>
+
+                <div class="slide">
+                    <div class="content" style="padding-top: 10%;">
+                        <p>The <strong>HP</strong> of sheep = <strong>0</strong>, combat <strong>end</strong>.</p>
+                        <img style="position: relative;transform: rotate(-90deg);" src="../resource/sheep.png">
+                    </div>
+                    <label class="prev" for="slide7">❮</label>
+                    <label class="next" for="slide1">❯</label>
+                </div>
+                
+                
+
+            </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+      <div class="section">
+        <h2>Next...</h2>
+        <div id="Link">
+        <a href="Monster.html" style="position: relative;" >
+            <h3>Monsters You May Meet</h3>
+        </a>
+        </div>
+      </div>
+
+    </div>
+
+   
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            entry.target.classList.toggle('active', entry.isIntersecting);
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    document.querySelectorAll('.section, .scene').forEach(el => {
+        observer.observe(el);
+        el.style.visibility = 'visible';
+    });
+
+    let currentIndex = 0;
+        const characters = document.querySelectorAll('.character');
+        const infoBoxes = document.querySelectorAll('.info-box');
+
+        function updateCharacter(direction) {
+            
+            characters.forEach(c => c.classList.remove('active', 'leftside', 'rightside'));
+            infoBoxes.forEach(b => b.classList.remove('active'));
+
+          
+            currentIndex = (currentIndex + direction + 3) % 3;
+
+            characters[currentIndex].classList.add('active');
+            const prevIndex = (currentIndex + 2) % 3;
+            const nextIndex = (currentIndex + 1) % 3;
+            characters[prevIndex].classList.add('leftside');
+            characters[nextIndex].classList.add('rightside');
+
+       
+            infoBoxes[currentIndex].classList.add('active');
+        }
+
+    
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') updateCharacter(-1);
+            if (e.key === 'ArrowRight') updateCharacter(1);
+        });
+
+        updateCharacter(0);
+
+});
+    </script>
+
+    <script src="../js/common.js"></script>
+  </body>
+
+
+
+
+
+</html>
+
